@@ -60,30 +60,44 @@ public class BoardController extends HttpServlet {
             List<ArticleVO> articlesList = new ArrayList<ArticleVO>();
             //  board/
             if(action==null){
+                //페이징 파라미터 가져오기
                 String _section = request.getParameter("section");
                 String _pageNum = request.getParameter("pageNum");
                 //1로 초기화
-                int section = Integer.parseInt(
-                        (
-                                (_section==null)
-                                        ?"1"
-                                        :_section
-                        )
-                );
-                int pageNum = Integer.parseInt(
-                        (
-                                (_pageNum==null)
-                                        ?"1"
-                                        :_pageNum
-                        )
-                );
+                int section = Integer.parseInt(((_section==null)?"1":_section));
+                int pageNum = Integer.parseInt(((_pageNum==null)?"1":_pageNum));
+                //맵으로 페이징 파라미터 만들기
                 Map<String, Integer> pagingMap = new HashMap<String, Integer>();
                 pagingMap.put("section",section);
                 pagingMap.put("pageNum",pageNum);
+                //Service 로 맵 전달
                 Map articlesMap = boardService.listArticles(pagingMap);
                 articlesMap.put("section",section);
                 articlesMap.put("pageNum", pageNum);
                 request.setAttribute("articlesMap", articlesMap);
+                nextPage = "/board07/listArticles.jsp";
+            } else if (action.equals("/listArticles.do")){
+                //paging 관련 파라미터 가져오기
+                String _section = request.getParameter("section");
+                String _pageNum = request.getParameter("pageNum");
+
+                //paging 파라미터 비어있으면 1 로 초기화, int 로 변경
+                int section = Integer.parseInt(((_section==null)?"1":_section));
+                int pageNum = Integer.parseInt(((_pageNum==null)?"1":_pageNum));
+
+                //Map 에 paging 파라미터 넣기
+                Map<String, Integer> pagingMap = new HashMap<String, Integer>();
+                pagingMap.put("section", section);
+                pagingMap.put("pageNum", pageNum);
+
+                //service 로 맵 전달해서 리스트 받기
+                Map articlesMap = boardService.listArticles(pagingMap);
+                articlesMap.put("section", section);
+                articlesMap.put("pageNum", pageNum);
+
+                request.setAttribute("articlesMap", articlesMap);
+
+                //다음 페이지
                 nextPage = "/board07/listArticles.jsp";
             }
 

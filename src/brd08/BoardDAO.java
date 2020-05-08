@@ -80,6 +80,7 @@ public class BoardDAO {
     public int selectTotArticles() {
         try{
             conn = dataFactory.getConnection();
+            //행 전체 개수 쿼리
             String query = "SELECT COUNT(articleNO) FROM t_board ";
             System.out.println(query);
             pstmt = conn.prepareStatement(query);
