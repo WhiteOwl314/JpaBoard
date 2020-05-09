@@ -96,4 +96,51 @@ public class BoardDAO {
         }
         return 0;
     }
+
+    public int insertNewArticle(ArticleVO article) {
+        int articleNO = getNewArticleNO();
+        try{
+            conn = dataFactory.getConnection();
+            int parentNO = article.getParentNO();
+            String title = article.getTitle();
+            String content = article.getContent();
+            String id = article.getId();
+            String imageFileName = article.getImageFileName();
+            String query = "INSERT INTO t_board (articleNO, parentNO, title, content, imageFileName, id)"
+                    + " VALUES (?, ?, ?, ?, ?, ?)";
+            System.out.println(query);
+            pstmt = conn.prepareStatement(query);
+            pstmt.setInt(1, articleNO);
+            pstmt.setInt(2, parentNO);
+            pstmt.setString(3, title);
+            pstmt.setString(4, content);
+            pstmt.setString(5, imageFileName);
+            pstmt.setString(6, id);
+            pstmt.executeUpdate();
+            pstmt.close();
+            conn.close();
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+        return articleNO;
+    }
+
+    private int getNewArticleNO() {
+        try {
+            conn = dataFactory.getConnection();
+            String query = "SELECT MAX(articleNO) FROM t_board";
+            System.out.println(query);
+            pstmt = conn.prepareStatement(query);
+            ResultSet rs = pstmt.executeQuery(query);
+            if (rs.next()){
+                return (rs.getInt(1) + 1);
+            }
+            rs.close();
+            pstmt.close();
+            conn.close();
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+        return 0;
+    }
 }

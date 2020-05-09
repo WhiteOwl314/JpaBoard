@@ -20,4 +20,8 @@ public class BoardService {
 
         return articlesMap;
     }
+
+    public int addArticle(ArticleVO article) {
+        return boardDAO.insertNewArticle(article);
+    }
 }
