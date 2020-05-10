@@ -166,6 +166,22 @@ public class BoardController extends HttpServlet {
                         + "</script>"
                         );
                 return;
+            } else if (action.equals("/removeArticle.do")){
+                int articleNO = Integer.parseInt(request.getParameter("articleNO"));
+                List<Integer> articleNOList = boardService.removeArticle(articleNO);
+                for (int _articleNO : articleNOList){
+                    File imgDir = new File(ARTICLE_IMAGE_REPO + "/" + articleNO);
+                    if (imgDir.exists()){
+                        FileUtils.deleteDirectory(imgDir);
+                    }
+                }
+
+                PrintWriter pw = response.getWriter();
+                pw.print("<script> alert('삭제했습니다.'); " +
+                        "location.href='" + request.getContextPath() + "/board/listArticles.do';" +
+                        "</script>"
+                );
+                return;
             }
 
             RequestDispatcher dispatcher = request.getRequestDispatcher(nextPage);
