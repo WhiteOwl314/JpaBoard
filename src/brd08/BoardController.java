@@ -182,6 +182,37 @@ public class BoardController extends HttpServlet {
                         "</script>"
                 );
                 return;
+            } else if (action.equals("/replyForm.do")){
+                int parentNO = Integer.parseInt(request.getParameter("parentNO"));
+                session = request.getSession();
+                session.setAttribute("parentNO", parentNO);
+                nextPage = "/board07/replyForm.jsp";
+            } else if (action.equals("/addReply.do")){
+                session = request.getSession();
+                int parentNO = (Integer) session.getAttribute("parentNO");
+                session.removeAttribute("parentNO");
+                Map<String, String> articleMap = upload(request, response);
+                String title = articleMap.get("title");
+                String content = articleMap.get("content");
+                String imageFileName = articleMap.get("imageFileName");
+                articleVO.setParentNO(parentNO);
+                articleVO.setId("lee");
+                articleVO.setTitle(title);
+                articleVO.setContent(content);
+                articleVO.setImageFileName(imageFileName);
+                int articleNO = boardService.addReply(articleVO);
+                if (imageFileName != null && imageFileName.length() != 0 ){
+                    File srcFile = new File(ARTICLE_IMAGE_REPO + "/temp/" + imageFileName);
+                    File destDir = new File(ARTICLE_IMAGE_REPO + "/" + articleNO);
+                    destDir.mkdirs();
+                    FileUtils.moveFileToDirectory(srcFile, destDir, true);
+                }
+                PrintWriter pw = response.getWriter();
+                pw.print("<script> alert('답글이 추가되었습니다.'); "
+                        + " location.href='" + request.getContextPath() + "/board/viewArticle.do?articleNO=" + articleNO + "';"
+                        + " </script>"
+                );
+                return;
             }
 
             RequestDispatcher dispatcher = request.getRequestDispatcher(nextPage);
