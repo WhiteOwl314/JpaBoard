@@ -133,6 +133,11 @@ public class BoardController extends HttpServlet {
                         + "/board/listArticles.do';" + "</script>"
                 );
                 return;
+            } else if (action.equals("/viewArticle.do")){
+                String articleNO = request.getParameter("articleNO");
+                articleVO = boardService.viewArticle(Integer.parseInt(articleNO));
+                request.setAttribute("article",articleVO);
+                nextPage = "/board07/viewArticle.jsp";
             }
 
             RequestDispatcher dispatcher = request.getRequestDispatcher(nextPage);

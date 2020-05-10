@@ -24,4 +24,10 @@ public class BoardService {
     public int addArticle(ArticleVO article) {
         return boardDAO.insertNewArticle(article);
     }
+
+    public ArticleVO viewArticle(int articleNO) {
+        ArticleVO article = null;
+        article = boardDAO.selectArticle(articleNO);
+        return article;
+    }
 }

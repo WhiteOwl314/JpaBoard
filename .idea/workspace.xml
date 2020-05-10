@@ -7,19 +7,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b1aeff2-c415-4c9d-84a8-0837789a43b0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/commons-fileupload-1.4-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/FileDownloadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/board07/viewArticle.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/JspBoard1/WEB-INF/classes/brd08/BoardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JspBoard1/WEB-INF/classes/brd08/BoardController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/JspBoard1/WEB-INF/classes/brd08/BoardDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JspBoard1/WEB-INF/classes/brd08/BoardDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/JspBoard1/WEB-INF/classes/brd08/BoardService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JspBoard1/WEB-INF/classes/brd08/BoardService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JspBoard1/board07/articleForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JspBoard1/board07/articleForm.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JspBoard1/brd08/BoardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JspBoard1/brd08/BoardController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JspBoard1/brd08/BoardDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JspBoard1/brd08/BoardDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JspBoard1/brd08/BoardService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JspBoard1/brd08/BoardService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/brd08/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/brd08/BoardController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/brd08/BoardDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/brd08/BoardDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/brd08/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/brd08/BoardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/board07/articleForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/board07/articleForm.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,35 +32,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/brd08/BoardController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="131" column="61" selection-start-line="131" selection-start-column="61" selection-end-line="131" selection-end-column="61" />
+            <state relative-caret-position="124">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3224#3241#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/board07/listArticles.jsp">
+        <entry file="file://$PROJECT_DIR$/web/board07/viewArticle.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="126" column="82" selection-start-line="126" selection-start-column="82" selection-end-line="126" selection-end-column="82" />
+            <state relative-caret-position="287">
+              <caret line="131" column="40" selection-start-line="131" selection-start-column="40" selection-end-line="131" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/board07/articleForm.jsp">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/common/FileDownloadController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-238">
-              <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+            <state relative-caret-position="251">
+              <caret line="53" column="39" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="39" />
               <folding>
-                <element signature="n#style#0;n#h1#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -70,12 +68,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/brd08/BoardService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+            <state relative-caret-position="284">
+              <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#633#634#0" expanded="true" />
-                <element signature="e#663#664#0" expanded="true" />
+                <element signature="e#690#691#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -84,8 +82,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/brd08/BoardDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="696">
-              <caret line="124" column="24" selection-start-line="124" selection-start-column="24" selection-end-line="124" selection-end-column="24" />
+            <state relative-caret-position="932">
+              <caret line="178" selection-start-line="178" selection-end-line="178" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -98,8 +96,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -119,10 +117,12 @@
         <option value="$PROJECT_DIR$/src/brd08/ArticleVO.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/web/board07/listArticles.jsp" />
-        <option value="$PROJECT_DIR$/src/brd08/BoardService.java" />
-        <option value="$PROJECT_DIR$/src/brd08/BoardDAO.java" />
         <option value="$PROJECT_DIR$/web/board07/articleForm.jsp" />
         <option value="$PROJECT_DIR$/src/brd08/BoardController.java" />
+        <option value="$PROJECT_DIR$/src/brd08/BoardService.java" />
+        <option value="$PROJECT_DIR$/src/brd08/BoardDAO.java" />
+        <option value="$PROJECT_DIR$/web/board07/viewArticle.jsp" />
+        <option value="$PROJECT_DIR$/src/common/FileDownloadController.java" />
       </list>
     </option>
   </component>
@@ -165,6 +165,12 @@
             <path>
               <item name="JspBoard1" type="b2602c69:ProjectViewProjectNode" />
               <item name="JspBoard1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JspBoard1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JspBoard1" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -178,13 +184,6 @@
               <item name="JspBoard1" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JspBoard1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JspBoard1" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JspBoard1" type="b2602c69:ProjectViewProjectNode" />
@@ -508,13 +507,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28575000" />
+    <option name="totallyTimeSpent" value="31609000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20759289" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20759289" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -525,7 +524,7 @@
       <window_info anchor="bottom" id="Application Servers" weight="0.32909605" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32909605" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32909605" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997175" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -634,28 +633,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/brd08/BoardDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="696">
-          <caret line="124" column="24" selection-start-line="124" selection-start-column="24" selection-end-line="124" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/brd08/BoardService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#633#634#0" expanded="true" />
-            <element signature="e#663#664#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/board07/listArticles.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="318">
@@ -673,13 +650,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/brd08/BoardController.java">
+    <entry file="file://$PROJECT_DIR$/src/brd08/BoardDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="131" column="61" selection-start-line="131" selection-start-column="61" selection-end-line="131" selection-end-column="61" />
+        <state relative-caret-position="932">
+          <caret line="178" selection-start-line="178" selection-end-line="178" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3224#3241#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/brd08/BoardService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#633#634#0" expanded="true" />
+            <element signature="e#690#691#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/board07/viewArticle.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="131" column="40" selection-start-line="131" selection-start-column="40" selection-end-line="131" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/brd08/BoardController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/FileDownloadController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="53" column="39" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
