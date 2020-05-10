@@ -26,11 +26,13 @@
     </style>
     <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script type="text/javascript">
+
         function backToList(obj) {
             obj.action = "${contextPath}/board/listArticles.do";
             obj.submit();
         }
-        function fn_enable(obj) {
+
+        function fn_enable(obj){
             document.getElementById("i_title").disabled=false;
             document.getElementById("i_content").disabled=false;
             document.getElementById("i_imageFileName").disabled=false;
@@ -43,13 +45,13 @@
             obj.submit();
         }
 
-        function readRUL(input){
+        function readURL (input){
             if(input.files && input.files[0]){
                 var reader = new FileReader();
                 reader.onload = function (e) {
-                    ${'#preview'}.attr('src', e.target.result);
+                    $('#preview').attr('src', e.target.result);
                 }
-                reader.readAsDataURL((input.files[0]));
+                reader.readAsDataURL(input.files[0]);
             }
         }
     </script>
@@ -126,7 +128,7 @@
 
             <tr id="tr_btn">
                 <td colspan="2" align="center">
-                    <input type="button" value="수정하기" onclick="fn_enable(this.form)">
+                    <input type="button" value="수정하기" onclick="fn_enable(this.form)" />
                     <input type="button" value="삭제하기" onclick="fn_remove_article('${contextPath}/board/removeArticle.do',${article.articleNO})">
                     <input type="button" value="리스트로 돌아가기" onclick="backToList(this.form)">
                     <input type="button" value="답글쓰기" onclick="fn_reply_form('${contextPath}/board/replyForm.do',${article.articleNO})">

@@ -180,4 +180,35 @@ public class BoardDAO {
 
         return article;
     }
+
+    public void updateArticle(ArticleVO article) {
+        int articleNO = article.getArticleNO();
+        String title = article.getTitle();
+        String content = article.getContent();
+        String imageFileName = article.getImageFileName();
+        try{
+            conn = dataFactory.getConnection();
+            String query = "UPDATE t_board SET title=?, content=?";
+            if (imageFileName != null && imageFileName.length() != 0){
+                query += ",imageFileName=?";
+            }
+            query += " WHERE articleNO=?";
+
+            System.out.println(query);
+            pstmt = conn.prepareStatement(query);
+            pstmt.setString(1,title);
+            pstmt.setString(2, content);
+            if (imageFileName != null && imageFileName.length() != 0){
+                pstmt.setString(3, imageFileName);
+                pstmt.setInt(4, articleNO);
+            } else {
+                pstmt.setInt(3, articleNO);
+            }
+            pstmt.executeUpdate();
+            pstmt.close();
+            conn.close();
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+    }
 }

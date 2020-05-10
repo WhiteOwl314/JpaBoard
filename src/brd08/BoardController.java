@@ -138,6 +138,34 @@ public class BoardController extends HttpServlet {
                 articleVO = boardService.viewArticle(Integer.parseInt(articleNO));
                 request.setAttribute("article",articleVO);
                 nextPage = "/board07/viewArticle.jsp";
+            } else if (action.equals("/modArticle.do")){
+                Map<String, String> articleMap = upload(request, response);
+                int articleNO = Integer.parseInt(articleMap.get("articleNO"));
+                articleVO.setArticleNO(articleNO);
+                String title = articleMap.get("title");
+                String content = articleMap.get("content");
+                String imageFileName = articleMap.get("imageFileName");
+                articleVO.setParentNO(0);
+                articleVO.setId("hong");
+                articleVO.setTitle(title);
+                articleVO.setContent(content);
+                articleVO.setImageFileName(imageFileName);
+                boardService.modArticle(articleVO);
+                if (imageFileName != null && imageFileName.length() != 0){
+                    String originalFileName = articleMap.get("originalFileName");
+                    File srcFile = new File(ARTICLE_IMAGE_REPO + "/temp/" + imageFileName);
+                    File destDir = new File(ARTICLE_IMAGE_REPO + "/" + articleNO);
+                    destDir.mkdirs();
+                    FileUtils.moveFileToDirectory(srcFile, destDir, true);
+                    File oldFile = new File(ARTICLE_IMAGE_REPO + "/" + articleNO+ "/" + originalFileName);
+                    oldFile.delete();
+                }
+                PrintWriter pw = response.getWriter();
+                pw.print("<script>" + " alert('수정되었습니다');" + " location.href='"
+                        + request.getContextPath() + "/board/viewArticle.do?articleNO=" + articleNO + "';"
+                        + "</script>"
+                        );
+                return;
             }
 
             RequestDispatcher dispatcher = request.getRequestDispatcher(nextPage);

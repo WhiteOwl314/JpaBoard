@@ -7,18 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b1aeff2-c415-4c9d-84a8-0837789a43b0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/common/FileDownloadController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/board07/viewArticle.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JspBoard1/WEB-INF/classes/brd08/BoardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JspBoard1/WEB-INF/classes/brd08/BoardController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JspBoard1/WEB-INF/classes/brd08/BoardDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JspBoard1/WEB-INF/classes/brd08/BoardDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JspBoard1/WEB-INF/classes/brd08/BoardService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JspBoard1/WEB-INF/classes/brd08/BoardService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JspBoard1/brd08/BoardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JspBoard1/brd08/BoardController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JspBoard1/brd08/BoardDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JspBoard1/brd08/BoardDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JspBoard1/brd08/BoardService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JspBoard1/brd08/BoardService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/brd08/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/brd08/BoardController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/brd08/BoardDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/brd08/BoardDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/brd08/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/brd08/BoardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/board07/viewArticle.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/board07/viewArticle.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/brd08/BoardController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="268">
+              <caret line="163" column="50" selection-start-line="163" selection-start-column="50" selection-end-line="163" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -47,20 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/board07/viewArticle.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="131" column="40" selection-start-line="131" selection-start-column="40" selection-end-line="131" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/common/FileDownloadController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="53" column="39" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-608">
+              <caret line="52" selection-start-line="52" selection-end-line="52" />
             </state>
           </provider>
         </entry>
@@ -69,11 +49,13 @@
         <entry file="file://$PROJECT_DIR$/src/brd08/BoardService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="284">
-              <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+              <caret line="34" column="22" lean-forward="true" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#633#634#0" expanded="true" />
                 <element signature="e#690#691#0" expanded="true" />
+                <element signature="e#907#908#0" expanded="true" />
+                <element signature="e#933#934#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -82,8 +64,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/brd08/BoardDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="932">
-              <caret line="178" selection-start-line="178" selection-end-line="178" />
+            <state relative-caret-position="140">
+              <caret line="198" column="28" lean-forward="true" selection-start-line="198" selection-start-column="28" selection-end-line="198" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -118,11 +100,11 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/web/board07/listArticles.jsp" />
         <option value="$PROJECT_DIR$/web/board07/articleForm.jsp" />
-        <option value="$PROJECT_DIR$/src/brd08/BoardController.java" />
+        <option value="$PROJECT_DIR$/src/common/FileDownloadController.java" />
         <option value="$PROJECT_DIR$/src/brd08/BoardService.java" />
         <option value="$PROJECT_DIR$/src/brd08/BoardDAO.java" />
         <option value="$PROJECT_DIR$/web/board07/viewArticle.jsp" />
-        <option value="$PROJECT_DIR$/src/common/FileDownloadController.java" />
+        <option value="$PROJECT_DIR$/src/brd08/BoardController.java" />
       </list>
     </option>
   </component>
@@ -507,13 +489,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31609000" />
+    <option name="totallyTimeSpent" value="37246000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20759289" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.20759289" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -524,7 +506,7 @@
       <window_info anchor="bottom" id="Application Servers" weight="0.32909605" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32909605" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32909605" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997175" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -536,7 +518,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info anchor="right" x="0" y="0" width="270" height="600" id="Documentation" side_tool="true" weight="0.32956383" />
+      <window_info anchor="right" x="0" y="0" width="270" height="600" id="Documentation" side_tool="true" weight="0.3292232" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -650,10 +632,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/FileDownloadController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/brd08/BoardDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="932">
-          <caret line="178" selection-start-line="178" selection-end-line="178" />
+        <state relative-caret-position="140">
+          <caret line="198" column="28" lean-forward="true" selection-start-line="198" selection-start-column="28" selection-end-line="198" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -663,36 +655,35 @@
     <entry file="file://$PROJECT_DIR$/src/brd08/BoardService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="284">
-          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+          <caret line="34" column="22" lean-forward="true" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#633#634#0" expanded="true" />
             <element signature="e#690#691#0" expanded="true" />
+            <element signature="e#907#908#0" expanded="true" />
+            <element signature="e#933#934#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="18103" column="37" lean-forward="true" selection-start-line="18103" selection-start-column="37" selection-end-line="18103" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/board07/viewArticle.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="131" column="40" selection-start-line="131" selection-start-column="40" selection-end-line="131" selection-end-column="40" />
+        <state relative-caret-position="-608">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/brd08/BoardController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/FileDownloadController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="53" column="39" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="39" />
+        <state relative-caret-position="268">
+          <caret line="163" column="50" selection-start-line="163" selection-start-column="50" selection-end-line="163" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
